@@ -1,0 +1,336 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Biz Haqimizda | Texno-Komp Toshkent</title>
+  <meta name="description" content="Texno-Komp tarixi, jamoasi va xizmat ko'rsatish standartlari. Toshkentda 2018-yildan buyon professional kompyuter tizimlarini yetkazib beramiz.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- YUQORI MA'LUMOT PANEL (TOP BAR) -->
+  <aside class="top-bar" aria-label="Tezkor ma'lumotlar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-item">
+        <span>📍</span> Toshkent sh., Chilonzor tumani, Bunyodkor shoh ko'chasi, 15-uy
+      </div>
+      <div class="top-bar-item">
+        <span>🕒</span> Ish vaqti: <strong class="top-bar-highlight">09:00 — 21:00</strong> (Dam olish kunisiz)
+      </div>
+      <div class="top-bar-item">
+        <span>📞</span> Bog'lanish: <a href="tel:+998712004545" class="top-bar-highlight">+998 (71) 200-45-45</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ASOSIY HEADER VA NAVIGATSIYA -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Texno-Komp Bosh sahifasi">
+        <div class="logo-badge">⚡</div>
+        <div class="logo-text">
+          Texno<span>-Komp</span>
+          <span class="logo-city">Toshkent Kompyuterlari</span>
+        </div>
+      </a>
+
+      <!-- Mobil Menyu uchun Toza CSS Checkbox Hack -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Menyuni ochish/yopish">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigatsiya menyusi -->
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Bosh sahifa</a>
+        <a href="katalog.html" class="nav-link">Kompyuterlar</a>
+        <a href="haqimizda.html" class="nav-link active">Biz haqimizda</a>
+        <a href="aloqa.html" class="nav-link">Aloqa</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="#about-modal" class="btn btn-primary btn-sm">Biz bilan bog'lanish</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- ASOSIY BIZ HAQIMIZDA BO'LIMI -->
+    <section class="section">
+      <div class="container">
+        <div class="about-grid">
+          <div>
+            <span class="section-tag">Kompaniya Tarixi</span>
+            <h1 class="section-title">
+              Toshkentda <span class="highlight">Kompyuter San'ati</span> va Yuqori Sifat
+            </h1>
+            <p class="section-desc" style="margin-bottom: 20px;">
+              <strong>Texno-Komp</strong> 2018-yilda Toshkent shahrida professional texnika ishqibozlari va muhandislar jamoasi tomonidan tashkil etilgan. Bizning maqsadimiz — shunchaki detallarni ulash emas, balki har bir mijozning ijodiy va professional salohiyatini ochib beruvchi mukammal ish qurolini yaratishdir.
+            </p>
+            <p style="color: var(--text-muted); line-height: 1.7; margin-bottom: 25px;">
+              Bugungi kunda biz O'zbekiston bo'ylab 5,000 dan ortiq mamnun o'yinchilar, dasturchilar, arxitektorlar va yirik korxonalarga xizmat ko'rsatib kelyapmiz. Har bir kompyuter eng mayda detallarigacha sinchkovlik bilan tekshiriladi.
+            </p>
+
+            <div class="hero-stats" style="padding-top: 20px;">
+              <div class="stat-item">
+                <h4>8+ Yil</h4>
+                <p>Bozordagi tajriba</p>
+              </div>
+              <div class="stat-item">
+                <h4>5,400+</h4>
+                <p>Mamnun mijozlar</p>
+              </div>
+              <div class="stat-item">
+                <h4>36 Oy</h4>
+                <p>Doimiy texnik kafolat</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="about-img-group">
+            <img 
+              src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=800&q=80" 
+              alt="Texno-Komp kompyuter yig'ish ustaxonasi" 
+              class="about-main-img"
+              width="800"
+              height="600"
+            >
+            <img 
+              src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=500&q=80" 
+              alt="Maxsus suv sovutish tizimi" 
+              class="about-sub-img"
+              width="500"
+              height="312"
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QANDAY ISHLAYMIZ (STANDARTLARIMIZ) -->
+    <section class="section" style="background: rgba(17, 24, 39, 0.4);">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag">Ish Jarayoni</span>
+          <h2 class="section-title">Bizning <span class="highlight">Yig'ish Standartimiz</span></h2>
+          <p class="section-desc">Har bir kompyuter noldan boshlab qat'iy sifat nazoratidan o'tkaziladi.</p>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="feature-icon">🔍</div>
+            <h3 class="feature-title">1. Ehtiyojlarni Tahlil Qilish</h3>
+            <p class="feature-desc">Mijozning byudjeti, foydalanadigan dasturlari (3ds Max, Premiere, AutoCAD) va o'yinlariga mos balanslangan komponentlar tanlanadi.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">⚡</div>
+            <h3 class="feature-title">2. Asl va Yangi Detallar</h3>
+            <p class="feature-desc">Faqat rasmiy distribyutorlardan keltirilgan, muhrlangan qutilardagi asl detallar (Intel, AMD, ASUS, MSI, Corsair) ochiladi.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">✨</div>
+            <h3 class="feature-title">3. Mukammal Kabel Menejmenti</h3>
+            <p class="feature-desc">Korpus ichidagi havoning erkin aylanishi va estetik go'zallik uchun barcha simlar maxsus yo'llar orqali yashiriladi.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="feature-icon">🧪</div>
+            <h3 class="feature-title">4. 6 Soatlik Stress-Test</h3>
+            <p class="feature-desc">FurMark, Cinebench va AIDA64 orqali harorat, quvvat manbai barqarorligi va chastotalar maksimal yuklama ostida tekshiriladi.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- JAMOA A'ZOLARI -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag">Mutaxassislar</span>
+          <h2 class="section-title">Bizning <span class="highlight">Professional Jamoamiz</span></h2>
+          <p class="section-desc">Toshkentdagi eng kuchli kompyuter muhandislari va texnik mutaxassislar.</p>
+        </div>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <img 
+              src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80" 
+              alt="Jasur Aliyev" 
+              class="team-photo"
+              width="500"
+              height="500"
+            >
+            <h3 class="team-name">Jasur Aliyev</h3>
+            <p class="team-role">Bosh Muhandis va Yig'uvchi</p>
+            <p style="color: var(--text-dim); font-size: 0.85rem; padding: 0 15px; margin-top: 8px;">
+              8 yillik tajriba. 3,000 dan ortiq tizimlar muallifi.
+            </p>
+          </div>
+
+          <div class="team-card">
+            <img 
+              src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80" 
+              alt="Farrux Karim" 
+              class="team-photo"
+              width="500"
+              height="500"
+            >
+            <h3 class="team-name">Farrux Karimov</h3>
+            <p class="team-role">Overclocking va Custom Suv Sovutish</p>
+            <p style="color: var(--text-dim); font-size: 0.85rem; padding: 0 15px; margin-top: 8px;">
+              Eksklyuziv hard-tube suv sovutish tizimlari bo'yicha usta.
+            </p>
+          </div>
+
+          <div class="team-card">
+            <img 
+              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80" 
+              alt="Malika Yusupova" 
+              class="team-photo"
+              width="500"
+              height="500"
+            >
+            <h3 class="team-name">Malika Yusupova</h3>
+            <p class="team-role">Bosh Konsultant va Dizayn Mutaxassisi</p>
+            <p style="color: var(--text-dim); font-size: 0.85rem; padding: 0 15px; margin-top: 8px;">
+              Mijozlarning har qanday savoliga aniq yechim topib beruvchi.
+            </p>
+          </div>
+
+          <div class="team-card">
+            <img 
+              src="https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=500&q=80" 
+              alt="Azizbek Saidov" 
+              class="team-photo"
+              width="500"
+              height="500"
+            >
+            <h3 class="team-name">Azizbek Saidov</h3>
+            <p class="team-role">Servis va Sifat Nazorati Rahbari</p>
+            <p style="color: var(--text-dim); font-size: 0.85rem; padding: 0 15px; margin-top: 8px;">
+              Har bir kompyuterning xavfsizligi va barqarorligiga javobgar.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- KAFOLAT VA SERVIS VA'DASI -->
+    <section class="section" style="padding-top: 0;">
+      <div class="container">
+        <div class="cta-banner">
+          <h2 class="cta-banner-title">Mijozlarimizga Doimiy G'amxo'rlik</h2>
+          <p class="cta-banner-desc">
+            Bizdan xarid qilingan har bir kompyuter uchun har 6 oyda Toshkentdagi servis markazimizda bepul changdan tozalash va diagnostika xizmati taqdim etiladi.
+          </p>
+          <a href="aloqa.html" class="btn btn-primary">Bizning Manzilga Tashrif Buyuring</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- TOZA CSS MODAL OYNA (:TARGET) -->
+  <aside id="about-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-about-title">
+    <a href="#" class="modal-backdrop-close" aria-label="Modalni yopish"></a>
+    
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modal-about-title" class="modal-title">Texno-Komp Jamoasi Bilan Bog'lanish</h3>
+        <a href="#" class="modal-close-btn" aria-label="Yopish">&times;</a>
+      </div>
+      <div class="modal-body">
+        <p style="color: var(--text-muted); font-size: 0.92rem; margin-bottom: 20px;">
+          Bizning mutaxassislarimiz bilan suhbatlashmoqchimisiz? Ma'lumotlaringizni qoldiring, biz sizga qo'ng'iroq qilamiz.
+        </p>
+
+        <form action="#" method="get" class="modal-form">
+          <div class="form-group">
+            <label class="form-label" for="about-name">Ismingiz *</label>
+            <input type="text" id="about-name" name="name" class="form-control" placeholder="Ismingizni yozing" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="about-phone">Telefon raqamingiz *</label>
+            <input type="tel" id="about-phone" name="phone" class="form-control" placeholder="+998 (90) 123-45-67" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="about-question">Savolingiz yoki taklifingiz</label>
+            <textarea id="about-question" name="message" class="form-control" placeholder="Qanday yordam bera olamiz?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%;">Xabarni Yuborish</button>
+        </form>
+      </div>
+    </div>
+  </aside>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo">
+            <div class="logo-badge">⚡</div>
+            <div class="logo-text">Texno<span>-Komp</span></div>
+          </a>
+          <p>
+            Toshkentda 2018-yildan beri professional darajada kompyuterlar yig'ish, sotish va kafolatli xizmat ko'rsatish bilan shug'ullanib kelayotgan yetakchi markaz.
+          </p>
+          <span style="color: var(--accent); font-weight: 600; font-size: 0.9rem;">
+            Sifat va ishonch kafolati!
+          </span>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Sahifalar</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Bosh sahifa</a></li>
+            <li><a href="katalog.html" class="footer-link">Kompyuterlar Katalogi</a></li>
+            <li><a href="haqimizda.html" class="footer-link">Biz haqimizda</a></li>
+            <li><a href="aloqa.html" class="footer-link">Aloqa va Manzil</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Toifalar</h4>
+          <ul class="footer-links">
+            <li><a href="katalog.html" class="footer-link">O'yin kompyuterlari</a></li>
+            <li><a href="katalog.html" class="footer-link">Dizayn & 3D Stansiyalar</a></li>
+            <li><a href="katalog.html" class="footer-link">Ofis uchun bloklar</a></li>
+            <li><a href="katalog.html" class="footer-link">Gaming Noutbuklar</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Toshkentdagi Ofis</h4>
+          <div class="footer-contact-item">
+            <span>📍</span>
+            <span>Toshkent sh., Chilonzor tumani, Bunyodkor ko'chasi 15-uy</span>
+          </div>
+          <div class="footer-contact-item">
+            <span>📞</span>
+            <a href="tel:+998712004545">+998 (71) 200-45-45</a>
+          </div>
+          <div class="footer-contact-item">
+            <span>✉️</span>
+            <span>info@texno-komp.uz</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Texno-Komp Toshkent. Barcha huquqlar himoyalangan.
+        </div>
+        <div>
+          Toza HTML5 va CSS3 (JavaScript-siz) yordamida yaratilgan.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>

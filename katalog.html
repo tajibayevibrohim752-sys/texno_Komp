@@ -1,0 +1,442 @@
+<!DOCTYPE html>
+<html lang="uz">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kompyuterlar Katalogi | Texno-Komp Toshkent</title>
+  <meta name="description" content="Toshkentda o'yin kompyuterlari, ofis bloklari, professional 3D render tizimlari va kuchli noutbuklar katalogi. Eng so'nggi narxlar va xususiyatlar.">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- YUQORI MA'LUMOT PANEL (TOP BAR) -->
+  <aside class="top-bar" aria-label="Tezkor ma'lumotlar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-item">
+        <span>📍</span> Toshkent sh., Chilonzor tumani, Bunyodkor shoh ko'chasi, 15-uy
+      </div>
+      <div class="top-bar-item">
+        <span>🕒</span> Ish vaqti: <strong class="top-bar-highlight">09:00 — 21:00</strong> (Dam olish kunisiz)
+      </div>
+      <div class="top-bar-item">
+        <span>📞</span> Bog'lanish: <a href="tel:+998712004545" class="top-bar-highlight">+998 (71) 200-45-45</a>
+      </div>
+    </div>
+  </aside>
+
+  <!-- ASOSIY HEADER VA NAVIGATSIYA -->
+  <header class="header">
+    <div class="container header-inner">
+      <a href="index.html" class="logo" aria-label="Texno-Komp Bosh sahifasi">
+        <div class="logo-badge">⚡</div>
+        <div class="logo-text">
+          Texno<span>-Komp</span>
+          <span class="logo-city">Toshkent Kompyuterlari</span>
+        </div>
+      </a>
+
+      <!-- Mobil Menyu uchun Toza CSS Checkbox Hack -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-label="Menyuni ochish/yopish">
+      <label for="nav-toggle" class="nav-toggle-label" aria-hidden="true">
+        <span></span>
+        <span></span>
+        <span></span>
+      </label>
+
+      <!-- Navigatsiya menyusi -->
+      <nav class="nav-menu">
+        <a href="index.html" class="nav-link">Bosh sahifa</a>
+        <a href="katalog.html" class="nav-link active">Kompyuterlar</a>
+        <a href="haqimizda.html" class="nav-link">Biz haqimizda</a>
+        <a href="aloqa.html" class="nav-link">Aloqa</a>
+      </nav>
+
+      <div class="nav-cta">
+        <a href="#katalog-modal" class="btn btn-primary btn-sm">Buyurtma berish</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- KATALOG SOHASI -->
+    <section class="section">
+      <div class="container">
+        <div class="section-title-wrap">
+          <span class="section-tag">Do'kon Mahsulotlari</span>
+          <h1 class="section-title">Bizning <span class="highlight">Kompyuterlar Katalogi</span></h1>
+          <p class="section-desc">
+            Har qanday byudjet va talabga mos yuqori sifatli konfiguratsiyalar. O'zingizga ma'qul toifani tanlang:
+          </p>
+        </div>
+
+        <!-- TOZA CSS FILTR (RADIO HACK) TIZIMI -->
+        <div class="filter-container">
+          <!-- Radio tugmalari (Yashirin boshqaruvchilar) -->
+          <input type="radio" name="catalog-filter" id="filter-all" class="filter-radio" checked>
+          <input type="radio" name="catalog-filter" id="filter-gaming" class="filter-radio">
+          <input type="radio" name="catalog-filter" id="filter-office" class="filter-radio">
+          <input type="radio" name="catalog-filter" id="filter-laptop" class="filter-radio">
+          <input type="radio" name="catalog-filter" id="filter-custom" class="filter-radio">
+
+          <!-- Foydalanuvchi ko'radigan filtr tugmalari -->
+          <div class="filter-buttons">
+            <label for="filter-all" class="filter-btn">✨ Barchasi (8)</label>
+            <label for="filter-gaming" class="filter-btn">🎮 O'yin (Gaming) PC</label>
+            <label for="filter-office" class="filter-btn">💼 Ofis va O'qish</label>
+            <label for="filter-laptop" class="filter-btn">💻 Noutbuklar</label>
+            <label for="filter-custom" class="filter-btn">🌊 Maxsus Water-Cooling</label>
+          </div>
+
+          <!-- Mahsulotlar ro'yxati -->
+          <div class="products-grid">
+            <!-- 1. Gaming PC -->
+            <article class="product-card cat-gaming">
+              <div class="product-thumb-wrap">
+                <span class="product-badge badge-gaming">Gaming Extreme</span>
+                <img 
+                  src="https://images.unsplash.com/photo-1587202372775-e229f172b9d7?auto=format&fit=crop&w=700&q=80" 
+                  alt="Cyber Apex RTX 4080 Gaming PC" 
+                  class="product-thumb"
+                  width="700"
+                  height="437"
+                >
+              </div>
+              <div class="product-body">
+                <h3 class="product-title">Cyber Apex RTX 4080 Super PC</h3>
+                <div class="product-specs">
+                  <div class="spec-line"><span>Protsessor:</span> <strong>Intel Core i9-14900K</strong></div>
+                  <div class="spec-line"><span>Videokarta:</span> <strong>NVIDIA RTX 4080 Super 16GB</strong></div>
+                  <div class="spec-line"><span>RAM:</span> <strong>32GB DDR5 6400MHz RGB</strong></div>
+                  <div class="spec-line"><span>SSD:</span> <strong>2TB NVMe Samsung 990 Pro</strong></div>
+                </div>
+                <div class="product-footer">
+                  <div class="product-price">
+                    <span class="price-old">27,000,000 so'm</span>
+                    <span class="price-current">24,900,000 so'm</span>
+                  </div>
+                  <a href="#katalog-modal" class="btn btn-primary btn-sm">Buyurtma</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 2. Gaming PC -->
+            <article class="product-card cat-gaming">
+              <div class="product-thumb-wrap">
+                <span class="product-badge badge-gaming">Cyber Sport</span>
+                <img 
+                  src="https://images.unsplash.com/photo-1593640408182-31c70c8268f5?auto=format&fit=crop&w=700&q=80" 
+                  alt="Shadow Beast RTX 4060 Gaming PC" 
+                  class="product-thumb"
+                  width="700"
+                  height="437"
+                >
+              </div>
+              <div class="product-body">
+                <h3 class="product-title">Shadow Hunter RTX 4060 Ti</h3>
+                <div class="product-specs">
+                  <div class="spec-line"><span>Protsessor:</span> <strong>AMD Ryzen 5 7600X</strong></div>
+                  <div class="spec-line"><span>Videokarta:</span> <strong>NVIDIA RTX 4060 Ti 8GB</strong></div>
+                  <div class="spec-line"><span>RAM:</span> <strong>32GB DDR5 5600MHz</strong></div>
+                  <div class="spec-line"><span>SSD:</span> <strong>1TB Kingston NV2 M.2</strong></div>
+                </div>
+                <div class="product-footer">
+                  <div class="product-price">
+                    <span class="price-old">15,200,000 so'm</span>
+                    <span class="price-current">13,800,000 so'm</span>
+                  </div>
+                  <a href="#katalog-modal" class="btn btn-primary btn-sm">Buyurtma</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 3. Ofis PC -->
+            <article class="product-card cat-office">
+              <div class="product-thumb-wrap">
+                <span class="product-badge badge-office">Ofis Standart</span>
+                <img 
+                  src="https://images.unsplash.com/photo-1527443224154-c4a3942d3acf?auto=format&fit=crop&w=700&q=80" 
+                  alt="Business Standard PC" 
+                  class="product-thumb"
+                  width="700"
+                  height="437"
+                >
+              </div>
+              <div class="product-body">
+                <h3 class="product-title">Business Pro Core i5 Tizimi</h3>
+                <div class="product-specs">
+                  <div class="spec-line"><span>Protsessor:</span> <strong>Intel Core i5-12400</strong></div>
+                  <div class="spec-line"><span>Grafika:</span> <strong>Intel UHD Graphics 730</strong></div>
+                  <div class="spec-line"><span>RAM:</span> <strong>16GB DDR4 3200MHz</strong></div>
+                  <div class="spec-line"><span>SSD:</span> <strong>512GB Fast M.2 SSD</strong></div>
+                </div>
+                <div class="product-footer">
+                  <div class="product-price">
+                    <span class="price-old">5,900,000 so'm</span>
+                    <span class="price-current">4,950,000 so'm</span>
+                  </div>
+                  <a href="#katalog-modal" class="btn btn-primary btn-sm">Buyurtma</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 4. Ofis PC -->
+            <article class="product-card cat-office">
+              <div class="product-thumb-wrap">
+                <span class="product-badge badge-office">Tejamkor Ofis</span>
+                <img 
+                  src="https://images.unsplash.com/photo-1547082299-de196ea013d6?auto=format&fit=crop&w=700&q=80" 
+                  alt="Compact Workstation" 
+                  class="product-thumb"
+                  width="700"
+                  height="437"
+                >
+              </div>
+              <div class="product-body">
+                <h3 class="product-title">Smart Office Slim i3 PC</h3>
+                <div class="product-specs">
+                  <div class="spec-line"><span>Protsessor:</span> <strong>Intel Core i3-12100</strong></div>
+                  <div class="spec-line"><span>Grafika:</span> <strong>Intel UHD Graphics</strong></div>
+                  <div class="spec-line"><span>RAM:</span> <strong>8GB DDR4 3200MHz</strong></div>
+                  <div class="spec-line"><span>SSD:</span> <strong>256GB SSD High-speed</strong></div>
+                </div>
+                <div class="product-footer">
+                  <div class="product-price">
+                    <span class="price-old">4,100,000 so'm</span>
+                    <span class="price-current">3,600,000 so'm</span>
+                  </div>
+                  <a href="#katalog-modal" class="btn btn-primary btn-sm">Buyurtma</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 5. Noutbuk -->
+            <article class="product-card cat-laptop">
+              <div class="product-thumb-wrap">
+                <span class="product-badge badge-laptop">Gaming Laptop</span>
+                <img 
+                  src="https://images.unsplash.com/photo-1603302576837-37561b2e2302?auto=format&fit=crop&w=700&q=80" 
+                  alt="ASUS ROG Strix G16" 
+                  class="product-thumb"
+                  width="700"
+                  height="437"
+                >
+              </div>
+              <div class="product-body">
+                <h3 class="product-title">ASUS ROG Strix G16 (240Hz)</h3>
+                <div class="product-specs">
+                  <div class="spec-line"><span>Ekran:</span> <strong>16" QHD+ 240Hz IPS</strong></div>
+                  <div class="spec-line"><span>Protsessor:</span> <strong>Intel Core i9-13980HX</strong></div>
+                  <div class="spec-line"><span>Videokarta:</span> <strong>RTX 4070 8GB (140W)</strong></div>
+                  <div class="spec-line"><span>Xotira:</span> <strong>32GB DDR5 / 1TB SSD</strong></div>
+                </div>
+                <div class="product-footer">
+                  <div class="product-price">
+                    <span class="price-old">22,500,000 so'm</span>
+                    <span class="price-current">20,800,000 so'm</span>
+                  </div>
+                  <a href="#katalog-modal" class="btn btn-primary btn-sm">Buyurtma</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 6. Noutbuk -->
+            <article class="product-card cat-laptop">
+              <div class="product-thumb-wrap">
+                <span class="product-badge badge-laptop">Kuchli Ish Noutbuki</span>
+                <img 
+                  src="https://images.unsplash.com/photo-1517336714731-489689fd1ca8?auto=format&fit=crop&w=700&q=80" 
+                  alt="Lenovo Legion Pro 5" 
+                  class="product-thumb"
+                  width="700"
+                  height="437"
+                >
+              </div>
+              <div class="product-body">
+                <h3 class="product-title">Lenovo Legion Pro 5 Gen 8</h3>
+                <div class="product-specs">
+                  <div class="spec-line"><span>Ekran:</span> <strong>16" WQXGA 165Hz HDR</strong></div>
+                  <div class="spec-line"><span>Protsessor:</span> <strong>AMD Ryzen 7 7745HX</strong></div>
+                  <div class="spec-line"><span>Videokarta:</span> <strong>RTX 4060 8GB</strong></div>
+                  <div class="spec-line"><span>Xotira:</span> <strong>16GB DDR5 / 1TB SSD</strong></div>
+                </div>
+                <div class="product-footer">
+                  <div class="product-price">
+                    <span class="price-old">17,800,000 so'm</span>
+                    <span class="price-current">16,200,000 so'm</span>
+                  </div>
+                  <a href="#katalog-modal" class="btn btn-primary btn-sm">Buyurtma</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 7. Custom Water-Cooling -->
+            <article class="product-card cat-custom">
+              <div class="product-thumb-wrap">
+                <span class="product-badge badge-popular">Custom Suv Sovutish</span>
+                <img 
+                  src="https://images.unsplash.com/photo-1591488320449-011701bb6704?auto=format&fit=crop&w=700&q=80" 
+                  alt="White Aesthetic Custom Watercooled PC" 
+                  class="product-thumb"
+                  width="700"
+                  height="437"
+                >
+              </div>
+              <div class="product-body">
+                <h3 class="product-title">Snow White Custom Loop PC</h3>
+                <div class="product-specs">
+                  <div class="spec-line"><span>Sovutish:</span> <strong>Hard Tube Custom Waterloop</strong></div>
+                  <div class="spec-line"><span>Protsessor:</span> <strong>AMD Ryzen 9 7950X3D</strong></div>
+                  <div class="spec-line"><span>Videokarta:</span> <strong>NVIDIA RTX 4090 24GB</strong></div>
+                  <div class="spec-line"><span>RAM:</span> <strong>64GB DDR5 White Edition</strong></div>
+                </div>
+                <div class="product-footer">
+                  <div class="product-price">
+                    <span class="price-old">42,000,000 so'm</span>
+                    <span class="price-current">38,500,000 so'm</span>
+                  </div>
+                  <a href="#katalog-modal" class="btn btn-primary btn-sm">Buyurtma</a>
+                </div>
+              </div>
+            </article>
+
+            <!-- 8. Custom Gaming PC -->
+            <article class="product-card cat-custom cat-gaming">
+              <div class="product-thumb-wrap">
+                <span class="product-badge badge-gaming">Maxsus RGB Dizayn</span>
+                <img 
+                  src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?auto=format&fit=crop&w=700&q=80" 
+                  alt="Cyberpunk Edition PC" 
+                  class="product-thumb"
+                  width="700"
+                  height="437"
+                >
+              </div>
+              <div class="product-body">
+                <h3 class="product-title">Cyberpunk Neon Edition PC</h3>
+                <div class="product-specs">
+                  <div class="spec-line"><span>Protsessor:</span> <strong>Intel Core i7-14700KF</strong></div>
+                  <div class="spec-line"><span>Videokarta:</span> <strong>RTX 4070 Ti Super 16GB</strong></div>
+                  <div class="spec-line"><span>RAM:</span> <strong>32GB RGB 6000MHz</strong></div>
+                  <div class="spec-line"><span>SSD:</span> <strong>1TB Gen4 NVMe M.2</strong></div>
+                </div>
+                <div class="product-footer">
+                  <div class="product-price">
+                    <span class="price-old">21,000,000 so'm</span>
+                    <span class="price-current">19,400,000 so'm</span>
+                  </div>
+                  <a href="#katalog-modal" class="btn btn-primary btn-sm">Buyurtma</a>
+                </div>
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- TOZA CSS BUYURTMA MODALI (:TARGET) -->
+  <aside id="katalog-modal" class="modal-overlay" role="dialog" aria-modal="true" aria-labelledby="modal-catalog-title">
+    <a href="#" class="modal-backdrop-close" aria-label="Modalni yopish"></a>
+    
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 id="modal-catalog-title" class="modal-title">Kompyuterga Buyurtma Berish</h3>
+        <a href="#" class="modal-close-btn" aria-label="Yopish">&times;</a>
+      </div>
+      <div class="modal-body">
+        <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 20px;">
+          Tanlagan modelingiz yoki konfiguratsiya bo'yicha ma'lumot qoldiring. Toshkent shahri ichida bepul yetkazib beramiz!
+        </p>
+
+        <form action="#" method="get" class="modal-form">
+          <div class="form-group">
+            <label class="form-label" for="buy-name">F.I.SH *</label>
+            <input type="text" id="buy-name" name="name" class="form-control" placeholder="Ismingizni kiriting" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="buy-phone">Telefon raqam *</label>
+            <input type="tel" id="buy-phone" name="phone" class="form-control" placeholder="+998 (90) 000-00-00" required>
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="buy-model">Qiziqtirgan model yoki talabingiz</label>
+            <input type="text" id="buy-model" name="model" class="form-control" placeholder="Masalan: Cyber Apex RTX 4080 yoki o'z konfiguratsiyangiz">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="buy-address">Toshkentdagi yetkazish manzili</label>
+            <input type="text" id="buy-address" name="address" class="form-control" placeholder="Tuman, ko'cha, xonadon">
+          </div>
+          <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 10px;">
+            Buyurtmani Tasdiqlash
+          </button>
+        </form>
+      </div>
+    </div>
+  </aside>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-about">
+          <a href="index.html" class="logo">
+            <div class="logo-badge">⚡</div>
+            <div class="logo-text">Texno<span>-Komp</span></div>
+          </a>
+          <p>
+            Toshkentda 2018-yildan beri professional darajada kompyuterlar yig'ish, sotish va kafolatli xizmat ko'rsatish bilan shug'ullanib kelayotgan yetakchi markaz.
+          </p>
+          <span style="color: var(--accent); font-weight: 600; font-size: 0.9rem;">
+            Sifat va ishonch kafolati!
+          </span>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Sahifalar</h4>
+          <ul class="footer-links">
+            <li><a href="index.html" class="footer-link">Bosh sahifa</a></li>
+            <li><a href="katalog.html" class="footer-link">Kompyuterlar Katalogi</a></li>
+            <li><a href="haqimizda.html" class="footer-link">Biz haqimizda</a></li>
+            <li><a href="aloqa.html" class="footer-link">Aloqa va Manzil</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Toifalar</h4>
+          <ul class="footer-links">
+            <li><a href="katalog.html" class="footer-link">O'yin kompyuterlari</a></li>
+            <li><a href="katalog.html" class="footer-link">Dizayn & 3D Stansiyalar</a></li>
+            <li><a href="katalog.html" class="footer-link">Ofis uchun bloklar</a></li>
+            <li><a href="katalog.html" class="footer-link">Gaming Noutbuklar</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title">Toshkentdagi Ofis</h4>
+          <div class="footer-contact-item">
+            <span>📍</span>
+            <span>Toshkent sh., Chilonzor tumani, Bunyodkor ko'chasi 15-uy</span>
+          </div>
+          <div class="footer-contact-item">
+            <span>📞</span>
+            <a href="tel:+998712004545">+998 (71) 200-45-45</a>
+          </div>
+          <div class="footer-contact-item">
+            <span>✉️</span>
+            <span>info@texno-komp.uz</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Texno-Komp Toshkent. Barcha huquqlar himoyalangan.
+        </div>
+        <div>
+          Toza HTML5 va CSS3 (JavaScript-siz) yordamida yaratilgan.
+        </div>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
